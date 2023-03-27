@@ -118,6 +118,11 @@ img {
   border-radius: 1.2rem;
   border: 1px solid var(--blue-alpha);
 }
+.option:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border: 1px solid var(--yellow);
+}
 .btn-next {
   align-self: end;
 }
