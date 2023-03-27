@@ -36,6 +36,9 @@ button {
 img {
   width: 100%;
 }
+li {
+  list-style: none;
+}
 
 /* Reusable Classes */
 .flex-center {

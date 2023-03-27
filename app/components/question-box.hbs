@@ -1,0 +1,9 @@
+{{!-- {{const optionNums='A','B','C','D'}} --}}
+
+<p class="question">{{@question}}</p>
+<ul class="options-box flex-col">
+  {{@option}}
+  {{#each @option}}
+    <li><Option @option={{@option}} />{{@option}}</li>
+  {{/each}}
+</ul>
