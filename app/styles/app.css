@@ -101,7 +101,7 @@ li {
   -o-border-radius: 2.4rem;
   position: relative;
   padding: 6.4rem 2.4rem 2.4rem;
-  min-width: 50rem;
+  width: 50rem;
   gap: 2.4rem;
 }
 .quiz-icon__quiz {
