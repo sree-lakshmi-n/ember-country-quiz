@@ -1,6 +1,6 @@
-<p class="question">{{@title}}</p>
+<p class="question">{{@model.title}}</p>
 <ul class="options-box flex-col">
-  {{#each @options as |option|}}
+  {{#each @model.option as |option|}}
     <li><Option @options={{option}} /></li>
   {{/each}}
 </ul>
