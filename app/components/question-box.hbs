@@ -1,6 +1,11 @@
-<p class="question">{{@model.title}}</p>
+<p class="question">{{this.demo.title}}</p>
 <ul class="options-box flex-col">
-  {{#each @model.option as |option|}}
+  {{#each this.demo.option as |option|}}
     <li><Option @options={{option}} /></li>
   {{/each}}
 </ul>
+{{#if this.isLastQn}}
+  <LinkTo class="button btn-next" @route="result">Submit</LinkTo>
+{{else}}
+  <button class="button btn-next" {{on "click" this.increment}}>Next</button>
+{{/if}}
