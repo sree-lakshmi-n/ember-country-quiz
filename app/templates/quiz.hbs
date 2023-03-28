@@ -3,14 +3,13 @@
 <section class="section-quiz">
   <header class="container-quiz flex-center-v">
     <h1 class="title title__quiz">Country Quiz</h1>
-    <p>Hi </p>
   </header>
   <main class="card quiz-card flex-col">
     <div class="quiz-icon quiz-icon__quiz"><img
         src="/assets/images/undraw_adventure_4hum 1.svg"
         alt="icon depicting a person going around the world"
       /></div>
-
+    <QuestionBox @title={{@model.title}} @options={{@model.option}} />
     <LinkTo @route="result" class="button btn-next">Next</LinkTo>
   </main>
 </section>
