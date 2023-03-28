@@ -7,5 +7,5 @@
 {{#if this.isLastQn}}
   <LinkTo class="button btn-next" @route="result">Submit</LinkTo>
 {{else}}
-  <button class="button btn-next" {{on "click" this.increment}}>Next</button>
+  <button class="button btn-next" type="button" {{on "click" this.increment}}>Next</button>
 {{/if}}
