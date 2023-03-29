@@ -1,4 +1,13 @@
-<div class="option">
+<div
+  class="option flex-center-v
+    {{if
+      (and this.clicked this.correctAnswer)
+      'correct'
+      (if this.clicked 'incorrect' '')
+    }}"
+  {{on "click" (fn this.isCorrect @options.value)}}
+>
+
   <span class="option-num">{{@options.id}}</span>
   <span class="option-value"> {{@options.value}}</span>
 </div>

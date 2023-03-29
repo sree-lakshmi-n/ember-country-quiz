@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
+    "@ember/render-modifiers": "^2.0.5",
     "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^2.9.3",
     "@glimmer/component": "^1.1.2",
@@ -49,6 +50,7 @@
     "ember-resolver": "^10.0.0",
     "ember-source": "~4.11.0",
     "ember-template-lint": "^5.6.0",
+    "ember-truth-helpers": "^3.1.1",
     "ember-welcome-page": "^7.0.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.6.0",

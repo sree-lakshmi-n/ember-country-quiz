@@ -5,7 +5,8 @@
   --dark-blue: #2f527b;
   --blue: rgb(96, 102, 208);
   --blue-alpha: rgba(96, 102, 208, 0.7);
-  --green: hsl(145, 50%, 62%);
+  --green: #60bf88;
+  --red: #ea8282;
 }
 * {
   padding: 0;
@@ -118,11 +119,17 @@ li {
   gap: 1.8rem;
   color: var(--blue);
 }
+.options-box:has(.incorrect) .option,
+.options-box:has(.correct) .option {
+  pointer-events: none;
+}
 .option {
   padding: 1.2rem;
   font-size: 1.6rem;
   border-radius: 1.2rem;
   border: 1px solid var(--blue-alpha);
+  gap: 2.4rem;
+  cursor: pointer;
 }
 .option:hover {
   background-color: var(--yellow);
@@ -156,4 +163,16 @@ li {
   font-weight: 700;
   font-size: 3.2rem;
   color: var(--green);
+}
+
+/* Reusable classes */
+.correct {
+  background: var(--green);
+  color: var(--white);
+  border: none;
+}
+.incorrect {
+  background: var(--red);
+  color: var(--white);
+  border: none;
 }
