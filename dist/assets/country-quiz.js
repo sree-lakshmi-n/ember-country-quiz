@@ -1328,7 +1328,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("country-quiz/app")["default"].create({"name":"country-quiz","version":"0.0.0+27efe57b"});
+            require("country-quiz/app")["default"].create({"name":"country-quiz","version":"0.0.0+62692e95"});
           }
         
 //# sourceMappingURL=country-quiz.map
